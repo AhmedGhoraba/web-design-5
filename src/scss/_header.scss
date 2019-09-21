@@ -1,0 +1,19 @@
+header{
+    height: 100vh;
+    background-color: $mainColor;
+    p{
+        span{
+            // @include fontStyle (24px,blue,Arial)
+        }
+    }
+}
+
+@if ($mainColor == red) {
+    span{
+        @include fontStyle (24px,white,Arial)
+    }
+}@else{
+    span{
+        @include fontStyle (24px,blue,Arial)
+    }
+}
